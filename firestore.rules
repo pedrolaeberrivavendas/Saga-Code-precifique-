@@ -1,0 +1,75 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // User's ingredients collection
+    match /users/{userId}/ingredients/{ingredientId} {
+      allow get, delete: if isOwner(userId) && isValidId(ingredientId);
+      allow list: if isOwner(userId);
+      allow create: if isOwner(userId)
+                    && isValidId(ingredientId)
+                    && request.resource.data.userId == request.auth.uid
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() > 0
+                    && request.resource.data.name.size() <= 120;
+      allow update: if isOwner(userId)
+                    && isValidId(ingredientId)
+                    && request.resource.data.userId == request.auth.uid
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() > 0
+                    && request.resource.data.name.size() <= 120;
+    }
+
+    // User's packagings collection
+    match /users/{userId}/packagings/{packagingId} {
+      allow get, delete: if isOwner(userId) && isValidId(packagingId);
+      allow list: if isOwner(userId);
+      allow create: if isOwner(userId)
+                    && isValidId(packagingId)
+                    && request.resource.data.userId == request.auth.uid
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() > 0
+                    && request.resource.data.name.size() <= 120;
+      allow update: if isOwner(userId)
+                    && isValidId(packagingId)
+                    && request.resource.data.userId == request.auth.uid
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() > 0
+                    && request.resource.data.name.size() <= 120;
+    }
+
+    // User's recipes collection
+    match /users/{userId}/recipes/{recipeId} {
+      allow get, delete: if isOwner(userId) && isValidId(recipeId);
+      allow list: if isOwner(userId);
+      allow create: if isOwner(userId)
+                    && isValidId(recipeId)
+                    && request.resource.data.userId == request.auth.uid
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() > 0
+                    && request.resource.data.name.size() <= 120;
+      allow update: if isOwner(userId)
+                    && isValidId(recipeId)
+                    && request.resource.data.userId == request.auth.uid
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() > 0
+                    && request.resource.data.name.size() <= 120;
+    }
+  }
+}

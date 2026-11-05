@@ -1,0 +1,88 @@
+{
+  "entities": {
+    "Ingredient": {
+      "title": "Ingredient",
+      "description": "Insumo alimentar com preço de compra, unidade, rendimento e conversões",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 120 },
+        "category": { "type": "string", "maxLength": 50 },
+        "purchaseQuantity": { "type": "number" },
+        "purchaseUnit": { "type": "string", "maxLength": 10 },
+        "purchasePrice": { "type": "number" },
+        "packageUnitsCount": { "type": "number" },
+        "yieldFactor": { "type": "number" },
+        "densityGPerMl": { "type": "number" },
+        "costPerBaseUnit": { "type": "number" },
+        "notes": { "type": "string", "maxLength": 250 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "name", "purchaseQuantity", "purchaseUnit", "purchasePrice", "yieldFactor"]
+    },
+    "Packaging": {
+      "title": "Packaging",
+      "description": "Item de embalagem ou descartável com compra e custo unitário",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 120 },
+        "category": { "type": "string", "maxLength": 50 },
+        "purchaseQuantity": { "type": "number" },
+        "packageUnitsCount": { "type": "number" },
+        "purchaseUnit": { "type": "string", "maxLength": 10 },
+        "purchasePrice": { "type": "number" },
+        "costPerUnit": { "type": "number" },
+        "notes": { "type": "string", "maxLength": 250 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "name", "purchaseQuantity", "purchasePrice", "costPerUnit"]
+    },
+    "Recipe": {
+      "title": "Recipe",
+      "description": "Ficha técnica de receita com custos de insumos, embalagens, porções e precificação",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 120 },
+        "category": { "type": "string", "maxLength": 50 },
+        "portions": { "type": "number" },
+        "rawWeightGrams": { "type": "number" },
+        "cookedWeightGrams": { "type": "number" },
+        "packagingCost": { "type": "number" },
+        "packagingItems": { "type": "array" },
+        "otherDirectCosts": { "type": "number" },
+        "indirectCostPerUnit": { "type": "number" },
+        "taxPercentage": { "type": "number" },
+        "cardFeePercentage": { "type": "number" },
+        "deliveryAppPercentage": { "type": "number" },
+        "targetProfitMargin": { "type": "number" },
+        "items": { "type": "array" },
+        "suggestedPrice": { "type": "number" },
+        "sellingPrice": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "name", "portions", "packagingCost"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/ingredients/{ingredientId}": {
+      "schema": "Ingredient",
+      "description": "Ingredientes e insumos do usuário"
+    },
+    "/users/{userId}/packagings/{packagingId}": {
+      "schema": "Packaging",
+      "description": "Embalagens e descartáveis reutilizáveis do usuário"
+    },
+    "/users/{userId}/recipes/{recipeId}": {
+      "schema": "Recipe",
+      "description": "Fichas técnicas e receitas salvas do usuário"
+    }
+  }
+}

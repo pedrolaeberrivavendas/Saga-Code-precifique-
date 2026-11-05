@@ -1,0 +1,8 @@
+{
+  "name": "SAGA Code | Calculadora de Custos e Precificação",
+  "description": "Ferramenta profissional e gratuita da SAGA Code para pequenos negócios de alimentação calcularem custos de produção, fichas técnicas, margem de lucro e formação de preços de venda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
