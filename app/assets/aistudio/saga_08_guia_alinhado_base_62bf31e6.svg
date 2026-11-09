@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <title>saga_08_guia_alinhado_base</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="Fundo_guia" data-name="Fundo guia" d="M0 0 L1600 0 L1600 1200 L0 1200 Z" fill="#e9e2d5"/>
+    <text transform="matrix(1 0 0 1 60 82)" x="0" y="0" xml:space="preserve" font-family="Georgia" font-size="47" fill="#16130f"><tspan x="0" y="0">SAGA CODE / FAMILIA VISUAL</tspan></text>
+    <text transform="matrix(1 0 0 1 64 121)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="23" fill="#655e53"><tspan x="0" y="0">Assinaturas para contextos distintos</tspan></text>
+    <path id="Painel_horizontal" data-name="Painel horizontal" d="M78 150 L1522 150 C1531.941 150 1540 158.059 1540 168 L1540 377 C1540 386.941 1531.941 395 1522 395 L78 395 C68.059 395 60 386.941 60 377 L60 168 C60 158.059 68.059 150 78 150 Z" fill="#f7f3eb"/>
+    <path id="Horizontal_upper" data-name="Horizontal upper" d="M561 181 L624 218 L595 236 L561 216 L518 241 L578 275 L547 293 L481 256 L481 227 Z" fill="#16130f"/>
+    <path id="Horizontal_lower" data-name="Horizontal lower" d="M575 230 L641 267 L641 295 L561 341 L499 304 L527 287 L561 307 L604 281 L544 247 Z" fill="#ff4d1a"/>
+    <text transform="matrix(1 0 0 1 679 330)" x="0" y="0" xml:space="preserve" font-family="Georgia" font-size="126" fill="#16130f"><tspan x="0" y="0">Saga</tspan></text>
+    <text transform="matrix(1 0 0 1 968 307)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="38" fill="#ff4d1a"><tspan x="0" y="0">CODE</tspan></text>
+    <text transform="matrix(1 0 0 1 1200 205)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="20" fill="#655e53"><tspan x="0" y="0">01 / WEBSITE E DOCUMENTOS</tspan></text>
+    <path id="Painel_vertical" data-name="Painel vertical" d="M80 445 L490 445 C501.046 445 510 453.954 510 465 L510 915 C510 926.046 501.046 935 490 935 L80 935 C68.954 935 60 926.046 60 915 L60 465 C60 453.954 68.954 445 80 445 Z" fill="#16130f"/>
+    <path id="Vertical_upper" data-name="Vertical upper" d="M285 490 L395 555 L345 585 L285 550 L210 595 L315 655 L260 685 L145 620 L145 570 Z" fill="#efe9dd"/>
+    <path id="Vertical_lower" data-name="Vertical lower" d="M310 575 L425 640 L425 690 L285 770 L175 705 L225 675 L285 710 L360 665 L255 605 Z" fill="#ff4d1a"/>
+    <text transform="matrix(1 0 0 1 285 866)" x="0" y="0" xml:space="preserve" font-family="Georgia" font-size="82" fill="#efe9dd" text-anchor="middle"><tspan x="0" y="0">Saga</tspan></text>
+    <text transform="matrix(1 0 0 1 285 912)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="29" fill="#ff9070" text-anchor="middle"><tspan x="0" y="0">CODE</tspan></text>
+    <path id="Painel_app" data-name="Painel app" d="M590 445 L1000 445 C1011.046 445 1020 453.954 1020 465 L1020 915 C1020 926.046 1011.046 935 1000 935 L590 935 C578.954 935 570 926.046 570 915 L570 465 C570 453.954 578.954 445 590 445 Z" fill="#f7f3eb"/>
+    <path id="Bloco_app" data-name="Bloco app" d="M714 533 L876 533 C908.585 533 935 559.415 935 592 L935 754 C935 786.585 908.585 813 876 813 L714 813 C681.415 813 655 786.585 655 754 L655 592 C655 559.415 681.415 533 714 533 Z" fill="#16130f"/>
+    <path id="App_icon_upper" data-name="App icon upper" d="M795 575 L875 622 L839 644 L795 618 L740 651 L817 695 L777 717 L693 670 L693 633 Z" fill="#efe9dd"/>
+    <path id="App_icon_lower" data-name="App icon lower" d="M813 637 L897 684 L897 721 L795 779 L715 732 L751 710 L795 735 L850 702 L773 659 Z" fill="#ff4d1a"/>
+    <path id="Painel_selo" data-name="Painel selo" d="M1100 445 L1520 445 C1531.046 445 1540 453.954 1540 465 L1540 915 C1540 926.046 1531.046 935 1520 935 L1100 935 C1088.954 935 1080 926.046 1080 915 L1080 465 C1080 453.954 1088.954 445 1100 445 Z" fill="#f7f3eb"/>
+    <path id="Selo_-_borda" data-name="Selo - borda" d="M1150 665 C1150 576.634 1221.634 505 1310 505 C1398.366 505 1470 576.634 1470 665 C1470 753.366 1398.366 825 1310 825 C1221.634 825 1150 753.366 1150 665 Z" fill="#f2ede4" stroke="#16130f" stroke-width="5" stroke-miterlimit="10"/>
+    <path id="Selo_-_anel_interno" data-name="Selo - anel interno" d="M1166 665 C1166 585.471 1230.471 521 1310 521 C1389.529 521 1454 585.471 1454 665 C1454 744.529 1389.529 809 1310 809 C1230.471 809 1166 744.529 1166 665 Z" fill="none" stroke="#ff4d1a" stroke-width="2" stroke-miterlimit="10"/>
+    <path id="Selo_simbolo_upper" data-name="Selo simbolo upper" d="M1310.497 641.956 L1310.926 642.206 L1310.734 642.325 L1310.497 642.187 L1310.206 642.365 L1310.615 642.596 L1310.404 642.715 L1309.956 642.464 L1309.956 642.266 Z" fill="#16130f"/>
+    <path id="Selo_simbolo_lower" data-name="Selo simbolo lower" d="M1310.596 642.285 L1311.044 642.536 L1311.044 642.734 L1310.497 643.044 L1310.074 642.794 L1310.266 642.675 L1310.497 642.813 L1310.794 642.635 L1310.384 642.404 Z" fill="#ff4d1a"/>
+    <text transform="matrix(1 0 0 1 1310 756)" x="0" y="0" xml:space="preserve" font-family="Georgia" font-size="51" fill="#16130f" text-anchor="middle"><tspan x="0" y="0">SAGA</tspan></text>
+    <text transform="matrix(1 0 0 1 1310 793)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="22" fill="#16130f" text-anchor="middle"><tspan x="0" y="0">CODE</tspan></text>
+    <text transform="matrix(1 0 0 1 65 973)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="22" fill="#4b443b"><tspan x="0" y="0">02 / APRESENTACOES</tspan></text>
+    <text transform="matrix(1 0 0 1 578 973)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="22" fill="#4b443b"><tspan x="0" y="0">03 / APLICATIVOS</tspan></text>
+    <text transform="matrix(1 0 0 1 1088 973)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="22" fill="#4b443b"><tspan x="0" y="0">04 / SELO E BRINDES</tspan></text>
+    <path id="Painel_monocromatico" data-name="Painel monocromatico" d="M78 1000 L1522 1000 C1531.941 1000 1540 1008.059 1540 1018 L1540 1127 C1540 1136.941 1531.941 1145 1522 1145 L78 1145 C68.059 1145 60 1136.941 60 1127 L60 1018 C60 1008.059 68.059 1000 78 1000 Z" fill="#ffffff"/>
+    <path id="Mono_upper" data-name="Mono upper" d="M211 1015 L247 1036 L231 1046 L211 1034 L186 1049 L221 1069 L203 1079 L165 1058 L165 1041 Z" fill="#16130f"/>
+    <path id="Mono_lower" data-name="Mono lower" d="M219 1043 L257 1064 L257 1081 L211 1107 L175 1086 L191 1076 L211 1087 L236 1072 L201 1053 Z" fill="#16130f"/>
+    <text transform="matrix(1 0 0 1 312.328 1101.197)" x="0" y="0" xml:space="preserve" font-family="Georgia" font-size="94" fill="#16130f"><tspan x="0" y="0">Saga</tspan></text>
+    <text transform="matrix(1 0 0 1 586.769 1083.993)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="34" fill="#16130f"><tspan x="0" y="0">CODE</tspan></text>
+    <text transform="matrix(1 0 0 1 1140 1065)" x="0" y="0" xml:space="preserve" font-family="Arial" font-size="21" fill="#655e53"><tspan x="0" y="0">05 / IMPRESSAO MONOCROMATICA</tspan></text>
+    <path id="Selo_redimensionado_-_superior" data-name="Selo redimensionado - superior" d="M1310 568 L1357 596 L1336 608 L1310 593 L1278 613 L1323 639 L1299 651 L1250 624 L1250 602 Z" fill="#16130f"/>
+    <path id="Selo_redimensionado_-_inferior" data-name="Selo redimensionado - inferior" d="M1321 604 L1370 632 L1370 654 L1310 688 L1263 660 L1284 647 L1310 662 L1342 643 L1297 617 Z" fill="#ff4d1a"/>
+  </g>
+</svg>
